@@ -16,11 +16,11 @@
             background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt_abNRmzrY1n5M6xss1OgU3TWtcrN_HZvqvQLnfubsYDtdapTF6OikLuv&s=10');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             font-family: 'Courier Prime', monospace;
             color: white;
         }
 
-        /* TikTok Button (Top Right) */
         .tiktok-btn {
             position: absolute;
             top: 20px;
@@ -30,12 +30,17 @@
             color: white;
             text-decoration: none;
             font-size: 14px;
+            transition: 0.3s;
         }
 
-        /* Responsive Buttons */
+        .tiktok-btn:hover {
+            background: white;
+            color: black;
+        }
+
         .btn {
             padding: 15px 30px;
-            font-size: clamp(1rem, 2.5vw, 1.5rem); /* Shrinks based on screen */
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
             background: transparent;
             border: 3px solid #E0F7FA;
             color: white;
@@ -43,7 +48,6 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
             margin: 10px;
-            display: inline-block;
             text-align: center;
         }
 
@@ -52,18 +56,18 @@
             box-shadow: 0 0 15px #E0F7FA;
         }
 
-        /* Devlog Section */
         .devlog {
             margin-top: 30px;
             background: rgba(0, 0, 0, 0.6);
             padding: 20px;
             max-width: 80%;
+            border: 1px solid #E0F7FA;
         }
     </style>
 </head>
 <body>
 
-    <a href="https://www.tiktok.com/@slgodot" class="tiktok-btn">TikTok</a>
+    <a href="https://www.tiktok.com/@slgodot?_r=1&_t=ZT-96xojqHJBi1" class="tiktok-btn">TikTok</a>
 
     <a href="https://github.com/notrealtze/DEVslGodot/releases/latest/download/FNAF.sl.godot.apk" class="btn">
         Install FNAF sl godot.apk
@@ -71,7 +75,7 @@
 
     <div class="devlog">
         <h2>DEVLOG 5</h2>
-        <p>Added vents crawling thing.</p>
+        <p>Added vents crawling thing</p>
     </div>
 
 </body>
