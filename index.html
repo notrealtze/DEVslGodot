@@ -53,37 +53,42 @@ body {
 }
 
 .btn {
-    padding: 15px 30px;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    padding: 15px 36px;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
     background: transparent;
     border: 3px solid #E0F7FA;
     color: white;
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    letter-spacing: 0.05em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     cursor: pointer;
     margin: 10px;
     text-align: center;
 }
-.btn svg {
-    width: 22px;
-    height: 22px;
-    fill: currentColor;
-    flex-shrink: 0;
-}
 .btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #E0F7FA;
+    box-shadow: 0 0 20px #E0F7FA;
+    background: rgba(224, 247, 250, 0.08);
 }
 
 .devlog {
     margin-top: 30px;
     background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
+    padding: 22px 28px;
     max-width: 80%;
     border: 1px solid #E0F7FA;
+}
+.devlog h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #E0F7FA;
+}
+.devlog p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.75);
 }
 </style>
 </head>
@@ -101,12 +106,11 @@ body {
 </div>
 
 <a href="https://github.com/notrealtze/DEVslGodot/releases/latest/download/FNAF.sl.godot.apk" class="btn">
-    <svg viewBox="0 0 24 24"><path d="M17.523 15.341c-.29-.144-1.722-.85-1.989-.946-.267-.099-.46-.144-.654.144-.194.287-.75.946-.919 1.14-.169.193-.338.217-.627.072-.29-.144-1.224-.45-2.332-1.44-.862-.77-1.444-1.72-1.613-2.01-.169-.289-.018-.444.127-.588.13-.129.29-.337.434-.506.145-.168.193-.287.29-.48.096-.192.048-.361-.024-.505-.072-.144-.654-1.576-.896-2.158-.236-.566-.476-.49-.654-.499-.169-.007-.362-.009-.555-.009-.193 0-.506.072-.771.361-.265.288-1.013 1.01-1.013 2.466s1.037 2.859 1.182 3.059c.144.193 2.04 3.114 4.942 4.367.691.299 1.23.477 1.65.611.693.22 1.324.189 1.822.115.556-.083 1.722-.703 1.965-1.383.242-.679.242-1.26.169-1.383-.072-.12-.265-.193-.556-.336zM12 0C5.373 0 0 5.373 0 12c0 2.12.554 4.11 1.523 5.843L0 24l6.302-1.496A11.956 11.956 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
     Install FNAF sl godot.apk
 </a>
 
 <div class="devlog">
-    <h2>DEVLOG 5</h2>
+    <h2>Devlog 5</h2>
     <p>Added vents crawling thing</p>
 </div>
 
